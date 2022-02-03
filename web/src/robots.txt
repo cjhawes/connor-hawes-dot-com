@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://www.connorhawes.co.uk/sitemap.xml
