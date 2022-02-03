@@ -11,7 +11,7 @@ import { DashboardLayoutComponent } from './layouts/dashboard-layout/dashboard-l
     DashboardLayoutComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule
   ],
   providers: [],
