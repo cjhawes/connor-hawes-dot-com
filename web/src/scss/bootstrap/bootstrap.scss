@@ -1,0 +1,11 @@
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+@media (min-width: 1700px) {
+    .col-xxl-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
