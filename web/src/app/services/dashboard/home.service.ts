@@ -7,7 +7,7 @@ export class HomeService {
 
   constructor() { }
 
-  getAboutMe(): string {
-    return 'I am currently a Graduate Software Developer working for telent in Warwick. I have a 1st Class Honours Degree in Computer Information Systems from Bangor University in North Wales. My dissertation project was "Data Extraction and Display of Energy Metrics". Currently I am working on developing my software skills in order to progress in my career as a Software Developer.';
+  getBio(): string {
+    return 'Connor Hawes is a Software Development Engineer working on Asset Monitoring and Maintenance soulutions for Telent Technology Services. He has obtained a 1st Class Honours Degree in Computer Information Systems from Bangor University in North Wales, with a dissertation project focussing on "Data Extraction and Display of Energy Metrics". Currently, he is deeply focussed on developing his skills in Angular, C#, DeepLearning with TensorFlow, and more in order to progress his career as a Software Developer.';
   }
 }
