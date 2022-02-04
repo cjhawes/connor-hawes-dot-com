@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import * as p5 from 'p5';
 
 import { HomeService } from 'src/app/services/dashboard/home.service';
-import { HomeSketchService } from 'src/app/sketches/home-sketch.service';
 
 @Component({
   selector: 'connor-home',
@@ -16,15 +15,40 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private homeService: HomeService,
-    private homeSketch: HomeSketchService,
   ) { }
 
   createCanvas() {
-    this.p5Sketch = new p5(this.homeSketch.sketch);
+    this.p5Sketch = new p5(this.sketch);
   }
 
   ngOnInit(): void {
     this.createCanvas();
     this.aboutMe = this.homeService.getAboutMe();
+  }
+
+  sketch(p: any) {
+    var angle = 0;
+    const r = 200;
+    var earth: any;
+
+    p.preload = () => {
+      earth = p.loadImage('../assets/images/earth-bw.jpg');
+    };
+
+    p.setup = () => {
+      const canvas2 = p.createCanvas(window.innerWidth / 2, window.innerHeight / 2, p.WEBGL);
+      canvas2.parent('sketch-holder');
+    };
+
+    p.draw = () => {
+      p.background(255);
+      p.rotateY(angle);
+      angle += 0.005;
+      p.lights();
+      p.fill(200);
+      p.noStroke();
+      p.texture(earth);
+      p.sphere(r);
+    };
   }
 }
