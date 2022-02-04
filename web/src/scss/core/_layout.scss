@@ -1,5 +1,7 @@
 .app-footer {
-    flex: 0 0 $footer-height;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 html, body {
