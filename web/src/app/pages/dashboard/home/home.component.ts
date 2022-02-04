@@ -8,14 +8,14 @@ import { HomeService } from 'src/app/services/dashboard/home.service';
 })
 export class HomeComponent implements OnInit {
 
-  public aboutMe?: string;
+  public bio?: string;
 
   constructor(
     private homeService: HomeService
   ) { }
 
   ngOnInit(): void {
-    this.aboutMe = this.homeService.getAboutMe();
+    this.bio = this.homeService.getBio();
   }
 
 }
