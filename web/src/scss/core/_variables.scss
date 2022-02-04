@@ -1,0 +1,21 @@
+// Colours
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-900: #212529;
+
+// Variables
+$body-color: $gray-900;
+$border-color: $gray-200;
+$border-width: 1px;
+$footer-bg: $gray-100;
+$footer-borders: (
+    top: (
+        size: 1px,
+        style: solid,
+        color: $border-color
+    ),
+);
+$footer-color: $body-color;
+$footer-height: 50px;
+$spacer: 1rem;
+$zindex-sticky: 1020;
