@@ -1,1 +1,23 @@
-<p>blog works!</p>
+<div class="container">
+    <h1 class="font-weight-light text-center mt-4 mb-0">Blog</h1>
+    <hr class="mt-2 mb-5">
+</div>
+
+<div class="container">
+    <h2 class="font-weight-light text-center mt-4 mb-0">About</h2>
+    <p class="font-weight-light text-center mt-4 mb-0">This blog is written as technical learning documents for review by the author. If anyone is to find this useful it would be a pleasure.</p>
+</div>
+
+<div class="container">
+    <h2 class="font-weight-light text-center mt-4 mb-0">Posts</h2>
+    <div *ngFor="let post of posts">
+        <div class="card">
+            <!-- <img [src]="post.author.image.url" class="card-img-top" [alt]="post.author.displayName"> -->
+            <div class="card-body">
+                <h3 class="card-title">{{post.title}}</h3>
+                <a [routerLink]="['post', post.id]" class="btn btn-primary">Read</a>
+            </div>
+        </div>
+        <hr>
+    </div>
+</div>

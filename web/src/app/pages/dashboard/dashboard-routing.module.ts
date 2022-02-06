@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PostResolveService } from 'src/app/services/blog/post-resolve.service';
 import { BlogComponent } from './blog/blog.component';
+import { PostComponent } from './blog/post/post.component';
 import { CvComponent } from './cv/cv.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -49,6 +51,13 @@ const routes: Routes = [
         path: '',
         component: BlogComponent,
       },
+      {
+        path: 'post/:id',
+        component: PostComponent,
+        resolve: {
+          post: PostResolveService
+        }
+      }
     ],
   },
 ];
