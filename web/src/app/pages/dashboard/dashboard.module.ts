@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { CvComponent } from './cv/cv.component';
 import { BlogComponent } from './blog/blog.component';
+import { PostComponent } from './blog/post/post.component';
 
 
 
@@ -15,7 +16,8 @@ import { BlogComponent } from './blog/blog.component';
     HomeComponent,
     ProjectsComponent,
     CvComponent,
-    BlogComponent
+    BlogComponent,
+    PostComponent
   ],
   imports: [
     CommonModule,
