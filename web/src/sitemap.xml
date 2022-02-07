@@ -1,15 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-  <loc>https://www.connorhawes.co.uk/</loc>
-  <lastmod>2022-02-03T14:26:38+00:00</lastmod>
-</url>
+   <url>
+      <loc>https://www.connorhawes.co.uk/</loc>
+      <lastmod>2022-02-07</lastmod>
+      <changefreq>monthly</changefreq>
+   </url>
 
+   <url>
+      <loc>https://www.connorhawes.co.uk/dashboard/</loc>
+      <lastmod>2022-02-07</lastmod>
+      <changefreq>monthly</changefreq>
+   </url>
 
-</urlset>
+   <url>
+      <loc>https://www.connorhawes.co.uk/dashboard/home/</loc>
+      <lastmod>2022-02-07</lastmod>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https://www.connorhawes.co.uk/dashboard/blog/</loc>
+      <lastmod>2022-02-07</lastmod>
+      <changefreq>always</changefreq>
+   </url>
+
+   <url>
+      <loc>https://www.connorhawes.co.uk/dashboard/blog/post/</loc>
+      <lastmod>2022-02-07</lastmod>
+      <changefreq>always</changefreq>
+   </url>
+
+   <url>
+      <loc>https://www.connorhawes.co.uk/dashboard/projects/</loc>
+      <lastmod>2022-02-07</lastmod>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https://www.connorhawes.co.uk/dashboard/cv/</loc>
+      <lastmod>2022-02-07</lastmod>
+      <changefreq>monthly</changefreq>
+   </url>
+
+</urlset> 
