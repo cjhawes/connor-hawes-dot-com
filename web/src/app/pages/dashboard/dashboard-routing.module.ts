@@ -52,6 +52,11 @@ const routes: Routes = [
         component: BlogComponent,
       },
       {
+        path: 'post',
+        redirectTo: '',
+        pathMatch: 'full',
+      },
+      {
         path: 'post/:id',
         component: PostComponent,
         resolve: {
