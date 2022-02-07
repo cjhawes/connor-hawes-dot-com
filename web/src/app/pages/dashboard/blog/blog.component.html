@@ -9,15 +9,15 @@
 </div>
 
 <div class="container">
-    <h2 class="font-weight-light text-center mt-4 mb-0">Posts</h2>
-    <div *ngFor="let post of posts">
-        <div class="card">
-            <!-- <img [src]="post.author.image.url" class="card-img-top" [alt]="post.author.displayName"> -->
-            <div class="card-body">
-                <h3 class="card-title">{{post.title}}</h3>
-                <a [routerLink]="['post', post.id]" class="btn btn-primary">Read</a>
-            </div>
-        </div>
-        <hr>
+    <h2 class="font-weight-light text-center mt-4 mb-0">Posts</h2><br>
+    <div class="band" *ngFor="let post of posts">
+        <div class="item-1">
+            <a [routerLink]="['post', post.id]" class="card">
+                <article>
+                    <h1>{{post.title}}</h1>
+                    <span>{{ post.author.displayName }} - {{ post.published | date:'medium' }}</span>
+                </article>
+            </a>
+        </div><br>
     </div>
 </div>
