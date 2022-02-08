@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
   constructor(
     private homeService: HomeService,
     private readingService: ReadingService,
-    private sketchService: SketchService
+    private sketchService: SketchService,
   ) { }
 
   ngOnInit(): void {
