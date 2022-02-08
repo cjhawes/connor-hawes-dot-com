@@ -5,7 +5,6 @@ import { BlogComponent } from './blog/blog.component';
 import { PostComponent } from './blog/post/post.component';
 import { CvComponent } from './cv/cv.component';
 import { HomeComponent } from './home/home.component';
-import { ProjectsComponent } from './projects/projects.component';
 
 const routes: Routes = [
   { 
@@ -20,16 +19,6 @@ const routes: Routes = [
       {
         path: '',
         component: HomeComponent,
-      },
-    ],
-  },
-  {
-    path: 'projects',
-    data: { title: 'Connor Hawes | Projects' },
-    children: [
-      {
-        path: '',
-        component: ProjectsComponent,
       },
     ],
   },
