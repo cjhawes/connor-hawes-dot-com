@@ -5,8 +5,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardLayoutComponent } from './layouts/dashboard-layout/dashboard-layout.component';
-import { PostResolveService } from './services/blog/post-resolve.service';
-import { PostService } from './services/blog/post.service';
+import { PostResolveService } from './services/dashboard/blog/post-resolve.service';
+import { PostService } from './services/dashboard/blog/post.service';
 
 @NgModule({
   declarations: [

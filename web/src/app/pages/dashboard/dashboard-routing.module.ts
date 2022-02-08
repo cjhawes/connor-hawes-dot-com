@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PostResolveService } from 'src/app/services/blog/post-resolve.service';
+import { PostResolveService } from 'src/app/services/dashboard/blog/post-resolve.service';
 import { BlogComponent } from './blog/blog.component';
 import { PostComponent } from './blog/post/post.component';
 import { CvComponent } from './cv/cv.component';
