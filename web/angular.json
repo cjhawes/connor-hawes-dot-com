@@ -35,8 +35,7 @@
               "src/robots.txt",
               "src/sitemap.xml",
               "src/assets",
-              "src/assets/images",
-              "src/assets/files"
+              "src/assets/images"
             ],
             "styles": [
               "src/scss/styles.scss"

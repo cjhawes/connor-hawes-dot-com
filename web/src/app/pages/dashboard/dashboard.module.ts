@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 import { DashboardComponent } from './dashboard.component';
 import { DashboardRoutingModule } from './dashboard-routing.module';
@@ -24,7 +23,6 @@ import { PostComponent } from './blog/post/post.component';
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    PdfViewerModule,
   ]
 })
 export class DashboardModule { }
