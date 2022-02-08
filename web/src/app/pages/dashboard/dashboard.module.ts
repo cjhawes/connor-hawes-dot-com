@@ -8,6 +8,7 @@ import { CvComponent } from './cv/cv.component';
 import { BlogComponent } from './blog/blog.component';
 import { PostComponent } from './blog/post/post.component';
 import { EmailModalComponent } from 'src/app/layouts/modals/email-modal.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { EmailModalComponent } from 'src/app/layouts/modals/email-modal.componen
   imports: [
     CommonModule,
     DashboardRoutingModule,
+    ReactiveFormsModule,
   ]
 })
 export class DashboardModule { }
