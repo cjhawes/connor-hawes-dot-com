@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
   private p5!: p5;
   public bio?: string;
   public books?: Book[];
+  public contacts!: Map<string, string>;
 
   constructor(
     private homeService: HomeService,
@@ -26,6 +27,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.bio = this.homeService.getBio();
     this.books = this.readingService.getBooks();
+    this.contacts = this.homeService.getContacts();
     
     this.createCanvas();
   }
