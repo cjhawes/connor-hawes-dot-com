@@ -1,8 +1,8 @@
 import { Image } from './image';
 
 export interface Author {
-    id: string;
+    id?: string;
     displayName: string;
-    url: string;
-    image: Image;
+    url?: string;
+    image?: Image;
 }

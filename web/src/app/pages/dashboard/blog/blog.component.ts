@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Post } from 'src/app/models/post';
-import { PostService } from 'src/app/services/blog/post.service';
+import { PostService } from 'src/app/services/dashboard/blog/post.service';
 
 @Component({
   selector: 'connor-blog',
