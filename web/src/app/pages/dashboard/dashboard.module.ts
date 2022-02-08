@@ -9,8 +9,6 @@ import { CvComponent } from './cv/cv.component';
 import { BlogComponent } from './blog/blog.component';
 import { PostComponent } from './blog/post/post.component';
 
-
-
 @NgModule({
   declarations: [
     DashboardComponent,
