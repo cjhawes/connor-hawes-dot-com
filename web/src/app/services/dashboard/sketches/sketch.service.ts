@@ -28,7 +28,7 @@ export class SketchService {
       p.fill(200);
       p.noStroke();
       p.texture(earth);
-      p.sphere((window.innerWidth / 2) / 5);
+      p.sphere(p.max(window.innerWidth, window.innerHeight) / 10);
     };
 
     p.windowResized = () => {
