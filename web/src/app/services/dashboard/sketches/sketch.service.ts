@@ -9,7 +9,6 @@ export class SketchService {
 
   public sketch(p: any) {
     let angle = 0;
-    const r = 200;
     let earth: any;
 
     p.preload = () => {
@@ -17,7 +16,7 @@ export class SketchService {
     };
 
     p.setup = () => {
-      const canvas2 = p.createCanvas(p.windowWidth / 2, p.windowHeight / 2, p.WEBGL);
+      const canvas2 = p.createCanvas(window.innerWidth / 2, window.innerHeight / 2, p.WEBGL);
       canvas2.parent('sketch-holder');
     };
 
@@ -29,7 +28,11 @@ export class SketchService {
       p.fill(200);
       p.noStroke();
       p.texture(earth);
-      p.sphere(r);
+      p.sphere((window.innerWidth / 2) / 5);
+    };
+
+    p.windowResized = () => {
+      p.resizeCanvas(window.innerWidth / 2, window.innerHeight / 2);
     };
   }
 }
