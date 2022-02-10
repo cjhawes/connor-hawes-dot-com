@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { DashboardLayoutComponent } from './layouts/dashboard-layout/dashboard-layout.component';
 import { PostResolveService } from './services/dashboard/blog/post-resolve.service';
 import { PostService } from './services/dashboard/blog/post.service';
+import { NotFoundComponent } from './layouts/not-found/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardLayoutComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
