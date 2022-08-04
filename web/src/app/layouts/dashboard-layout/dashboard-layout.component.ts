@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { EmailModalComponent } from '../modals/email/email-modal.component';
 
 @Component({
   selector: 'connor-dashboard-layout',
