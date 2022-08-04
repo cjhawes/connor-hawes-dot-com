@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { HomeService } from 'src/app/services/dashboard/home.service';
-import { SketchService } from 'src/app/services/dashboard/sketches/sketch.service';
+import { HomeService } from 'src/app/services/home.service';
+import { SketchService } from 'src/app/services/sketches/sketch.service';
 
 import * as p5 from 'p5';
 import { Book } from 'src/app/models/book';
-import { ReadingService } from 'src/app/services/dashboard/home/reading.service';
+import { ReadingService } from 'src/app/services/home/reading.service';
 
 @Component({
   selector: 'connor-home',

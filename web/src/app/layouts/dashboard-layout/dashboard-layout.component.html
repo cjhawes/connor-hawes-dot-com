@@ -10,9 +10,6 @@
                     <a class="nav-link" routerLink="home" routerLinkActive="active">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="blog" routerLinkActive="active">Blog</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" routerLink="cv" routerLinkActive="active">CV</a>
                 </li>
                 <li class="nav-item dropdown">
@@ -28,11 +25,15 @@
                     </ul>
                 </li>
             </ul>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Contact Connor
+            </button>
         </div>
     </div>
 </header>
 <main class="main">
     <div class="container-fluid">
         <router-outlet></router-outlet>
+        <email-modal></email-modal>
     </div>
 </main>
