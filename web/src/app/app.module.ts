@@ -8,11 +8,11 @@ import { DashboardLayoutComponent } from './layouts/dashboard-layout/dashboard-l
 import { PostResolveService } from './services/dashboard/blog/post-resolve.service';
 import { PostService } from './services/dashboard/blog/post.service';
 import { NotFoundComponent } from './layouts/not-found/not-found/not-found.component';
+import { EmailModalComponent } from './layouts/modals/email-modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardLayoutComponent,
     NotFoundComponent,
   ],
   imports: [
