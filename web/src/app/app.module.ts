@@ -9,6 +9,7 @@ import { PostResolveService } from './services/dashboard/blog/post-resolve.servi
 import { PostService } from './services/dashboard/blog/post.service';
 import { NotFoundComponent } from './layouts/not-found/not-found/not-found.component';
 import { EmailModalComponent } from './layouts/modals/email-modal.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { EmailModalComponent } from './layouts/modals/email-modal.component';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
+    FontAwesomeModule,
   ],
   providers: [
     PostService,
