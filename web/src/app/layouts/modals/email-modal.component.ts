@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'email-modal',
-  templateUrl: './email-modal.component.html',
-  styleUrls: ['./email-modal.component.scss']
+  templateUrl: './email-modal.component.html'
 })
 export class EmailModalComponent implements OnInit {
 

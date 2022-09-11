@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DashboardLayoutComponent implements OnInit {
 
   public year: number = new Date().getFullYear();
+  public pdfSrc: string = "../../../assets/files/CV.pdf";
 
   constructor() { }
 

@@ -4,11 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DashboardLayoutComponent } from './layouts/dashboard-layout/dashboard-layout.component';
+import { NotFoundComponent } from './layouts/not-found/not-found/not-found.component';
 import { PostResolveService } from './services/dashboard/blog/post-resolve.service';
 import { PostService } from './services/dashboard/blog/post.service';
-import { NotFoundComponent } from './layouts/not-found/not-found/not-found.component';
-import { EmailModalComponent } from './layouts/modals/email-modal.component';
 
 @NgModule({
   declarations: [
