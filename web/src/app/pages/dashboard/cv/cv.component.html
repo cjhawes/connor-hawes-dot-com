@@ -114,10 +114,10 @@
     <div class="grid">
       <ng-container class="github-cards" *ngFor="let repo of repos">
         <github-card
-          *ngIf="repo.visibility == 'public'"
-          [html_url]="repo.html_url" [name]="repo.name"
-          [description]="repo.description" [language]="repo.language"
-          [stargazers_count]="repo.stargazers_count" [forks_count]="repo.forks_count">
+          *ngIf="repo.visibility == 'public'" [html_url]="repo.html_url" 
+          [name]="repo.name" [description]="repo.description" 
+          [language]="repo.language" [stargazers_count]="repo.stargazers_count"
+          [forks_count]="repo.forks_count" [watchers_count]="repo.watchers_count">
         </github-card>
       </ng-container>
     </div>
