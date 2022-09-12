@@ -72,7 +72,9 @@
     <h2 class="font-weight-light text-center mt-4 mb-0">
         Skills
     </h2>
+
     <hr class="mt-2 mb-5">
+
     <table class="table">
         <thead>
             <tr class="table-dark">
@@ -103,24 +105,26 @@
     <h2 class="font-weight-light text-center mt-4 mb-0">
         Projects
     </h2>
+
     <hr class="mt-2 mb-5">
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-            <a href="https://github.com/cjhawes/connor-hawes-dot-com">
-                <img src="https://gh-card.dev/repos/cjhawes/connor-hawes-dot-com.svg" alt="The repository for this website" width=422 height=109>
-            </a>
-        </div>
-        <div class="col-md-auto">
-            <a href="https://github.com/cjhawes/learnopencv">
-                <img src="https://gh-card.dev/repos/cjhawes/learnopencv.svg" alt="Learn OpenCV Repository" width=422 height=109>
-            </a>
-        </div>
+
+    <div class="grid">
+      <ng-container class="github-cards" *ngFor="let repo of repos">
+        <github-card
+          *ngIf="repo.visibility == 'public'"
+          [html_url]="repo.html_url" [name]="repo.name"
+          [description]="repo.description" [language]="repo.language"
+          [stargazers_count]="repo.stargazers_count" [forks_count]="repo.forks_count">
+        </github-card>
+      </ng-container>
     </div>
 
     <h2 class="font-weight-light text-center mt-4 mb-0">
         Achievements
     </h2>
+
     <hr class="mt-2 mb-5">
+
     <div class="row justify-content-md-center">
         <div class="col-md-auto">
             <a href="https://www.credly.com/badges/a5dd0e8a-c913-4349-9dcd-2d7465d2fa6b/public_url">
@@ -128,6 +132,9 @@
             </a>
         </div>
     </div>
+
     <br>
+
     <hr class="mt-2 mb-5">
+
 </div>

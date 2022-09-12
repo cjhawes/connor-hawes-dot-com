@@ -1,3 +1,15 @@
 .table td, th {
     text-align: center;
-} 
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Create 3 columns and auto-place rows */
+}
+
+.github-cards {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 900px;
+}
