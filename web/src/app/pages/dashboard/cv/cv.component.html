@@ -122,15 +122,17 @@
     </h2>
     <hr class="mt-2 mb-5">
 
-    <div class="grid">
-      <ng-container class="github-cards" *ngFor="let repo of repos">
-        <github-card
-          *ngIf="repo.visibility == 'public'" [html_url]="repo.html_url" 
-          [name]="repo.name" [description]="repo.description" 
-          [language]="repo.language" [stargazers_count]="repo.stargazers_count"
-          [forks_count]="repo.forks_count" [watchers_count]="repo.watchers_count">
-        </github-card>
-      </ng-container>
+    <div class="card">
+        <div class="grid">
+            <ng-container class="github-cards" *ngFor="let repo of repos">
+                <github-card
+                *ngIf="repo.visibility == 'public'" [html_url]="repo.html_url" 
+                [name]="repo.name" [description]="repo.description" 
+                [language]="repo.language" [stargazers_count]="repo.stargazers_count"
+                [forks_count]="repo.forks_count" [watchers_count]="repo.watchers_count">
+                </github-card>
+            </ng-container>
+        </div>
     </div>
 
     <h2 class="font-weight-light text-center mt-4 mb-0">
@@ -138,15 +140,14 @@
     </h2>
     <hr class="mt-2 mb-5">
 
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-            <a href="https://www.credly.com/badges/a5dd0e8a-c913-4349-9dcd-2d7465d2fa6b/public_url">
-                <img alt="PSM 1 Badge" src="assets/images/professional-scrum-master-i-psm-i.png" width=138 height="138">
-            </a>
+    <div class="card">
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <a href="https://www.credly.com/badges/a5dd0e8a-c913-4349-9dcd-2d7465d2fa6b/public_url">
+                    <img alt="PSM 1 Badge" src="assets/images/professional-scrum-master-i-psm-i.png" width=138 height="138">
+                </a>
+            </div>
         </div>
     </div>
-    
-    <br>
-    <hr class="mt-2 mb-5">
 
 </div>
