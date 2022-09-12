@@ -10,6 +10,7 @@
                     <fa-icon [icon]="faWork"></fa-icon> {{user.company}}
                     <fa-icon [icon]="faLocation"></fa-icon> {{user.location}} 
                     <fa-icon [icon]="faGithubRepo"></fa-icon> {{user.public_repos}}
+                    <fa-icon [icon]="faClock" *ngIf="timeSince != null"></fa-icon> {{timeSince | date:'medium'}}
                 </p>
             </div>
         </div>

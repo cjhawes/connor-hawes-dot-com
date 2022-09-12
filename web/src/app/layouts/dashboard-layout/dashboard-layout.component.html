@@ -7,13 +7,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="home" routerLinkActive="active">Home</a>
+                    <a class="nav-link" routerLink="home" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="blog" routerLinkActive="active">Blog</a>
+                    <a class="nav-link" routerLink="blog" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="cv" routerLinkActive="active">CV</a>
+                    <a class="nav-link" routerLink="cv" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">CV</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -21,27 +21,27 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li>
-                          <a class="dropdown-item" href="https://github.com/cjhawes">
+                          <a class="dropdown-item" href="https://github.com/cjhawes" target="_blank">
                             <fa-icon [icon]="faGithub"></fa-icon> Github
                           </a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="https://www.linkedin.com/in/connor-hawes-675b07180">
+                          <a class="dropdown-item" href="https://www.linkedin.com/in/connor-hawes-675b07180" target="_blank">
                             <fa-icon [icon]="faLinkedin"></fa-icon> LinkedIn
                           </a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="https://www.facebook.com/softwareextraordinaire/">
+                          <a class="dropdown-item" href="https://www.facebook.com/softwareextraordinaire/" target="_blank">
                             <fa-icon [icon]="faFacebook"></fa-icon> Facebook
                           </a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="https://www.instagram.com/dawhalewarior/">
+                          <a class="dropdown-item" href="https://www.instagram.com/dawhalewarior/" target="_blank">
                             <fa-icon [icon]="faInstagram"></fa-icon> Instagram
                           </a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="https://twitter.com/dawhalewarior97">
+                          <a class="dropdown-item" href="https://twitter.com/dawhalewarior97" target="_blank">
                             <fa-icon [icon]="faTwitter"></fa-icon> Twitter
                           </a>
                         </li>
@@ -51,7 +51,7 @@
             <ul class="navbar-nav mb-2">
               <li class="nav-item nav-btn">
                 <a class="btn btn-primary" [href]="pdfSrc" role="button" download>
-                  <fa-icon [icon]="faDownload"></fa-icon> CV
+                  <fa-icon [icon]="faDownload"></fa-icon> {{buttonText}}
                 </a>
                 <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   Contact Me

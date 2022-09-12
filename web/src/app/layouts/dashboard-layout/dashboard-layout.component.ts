@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { faFacebook, faInstagram, faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { Component } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { faFacebook, faGithub, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -7,7 +8,7 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './dashboard-layout.component.html',
   styleUrls: ['./dashboard-layout.component.scss']
 })
-export class DashboardLayoutComponent implements OnInit {
+export class DashboardLayoutComponent {
 
   faDownload = faDownload;
   faFacebook = faFacebook;
@@ -16,12 +17,20 @@ export class DashboardLayoutComponent implements OnInit {
   faGithub = faGithub;
   faTwitter = faTwitter;
 
-  public year: number = new Date().getFullYear();
-  public pdfSrc: string = "../../../assets/files/CV.pdf";
+  buttonText: string = "";
 
-  constructor() { }
+  year: number = new Date().getFullYear();
+  pdfSrc: string = "../../../assets/files/CV.pdf";
 
-  ngOnInit(): void {
+  constructor(private router: Router) {
+    router.events.forEach(event => {
+      if (event instanceof NavigationEnd) {
+        if (router.url == "/dashboard/cv") {
+          this.buttonText = "";
+        } else {
+          this.buttonText = "CV";
+        }
+      }
+    })
   }
-
 }
