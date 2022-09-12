@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faGithubAlt } from '@fortawesome/free-brands-svg-icons';
-import { faBriefcase, faLocation } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase, faFileCode, faLocation } from '@fortawesome/free-solid-svg-icons';
 import { Observable } from 'rxjs';
 import { Repo } from 'src/app/models/github/repo';
 import { User } from 'src/app/models/github/user';
@@ -14,7 +13,7 @@ import { GithubService } from 'src/app/services/dashboard/github.service';
 export class CvComponent implements OnInit {
 
   faLocation = faLocation;
-  faGithubRepo = faGithubAlt;
+  faGithubRepo = faFileCode;
   faWork = faBriefcase;
 
   public pdfSrc: string = "../assets/files/CV.pdf";
