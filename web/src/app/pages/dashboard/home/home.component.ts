@@ -3,6 +3,7 @@ import { HomeService } from 'src/app/services/dashboard/home.service';
 import { SketchService } from 'src/app/services/dashboard/sketches/sketch.service';
 
 import * as p5 from 'p5';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'connor-home',
@@ -17,7 +18,10 @@ export class HomeComponent implements OnInit {
   constructor(
     private homeService: HomeService,
     private sketchService: SketchService,
-  ) {   }
+    private titleService: Title,
+  ) {
+    this.titleService.setTitle("Connor Hawes");
+  }
 
   ngOnInit(): void {
     this.bio = this.homeService.getBio();
