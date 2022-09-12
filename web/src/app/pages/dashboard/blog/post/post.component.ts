@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { faBackward } from '@fortawesome/free-solid-svg-icons';
 import { Post } from 'src/app/models/post';
 
 @Component({
@@ -8,6 +9,8 @@ import { Post } from 'src/app/models/post';
   styleUrls: ['./post.component.scss']
 })
 export class PostComponent implements OnInit {
+
+  faBack = faBackward;
 
   private data: any;
   public post!: Post;

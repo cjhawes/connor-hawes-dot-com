@@ -1,5 +1,10 @@
 <div class="container">
-    <h1 class="font-weight-light text-center mt-4 mb-0">{{ post.title }}</h1>
-    <h2 class="font-weight-light text-center mt-4 mb-0">By {{ post.author.displayName }}</h2>
+    <div class="header">
+        <h1 class="font-weight-light text-center mt-4 mb-0">{{ post.title }}</h1>
+        <h5 class="font-weight-light text-center mt-4 mb-0">By {{ post.author.displayName }}</h5>
+        <a class="btn btn-primary" routerLink=".."><fa-icon [icon]="faBack"></fa-icon> Back</a>
+        <hr class="mt-2 mb-5">
+    </div>
+    
     <div [innerHTML]="this.post.content"></div>
 </div>
