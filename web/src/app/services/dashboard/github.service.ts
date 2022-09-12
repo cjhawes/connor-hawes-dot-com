@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { User } from 'src/app/models/github/user';
 import { Repo } from 'src/app/models/github/repo';
 
 @Injectable({
@@ -8,11 +9,16 @@ import { Repo } from 'src/app/models/github/repo';
 })
 export class GithubService {
 
-  private url: string = "https://api.github.com/users/cjhawes/repos";
+  private user_url: string = "https://api.github.com/users/cjhawes";
+  private repos_url: string = `${this.user_url}/repos`;
 
   constructor (private http: HttpClient) {}
 
   getRepos(): Observable<Repo[]> {
-    return this.http.get<Repo[]>(this.url)
+    return this.http.get<Repo[]>(this.repos_url)
+  }
+
+  getUserDetails(): Observable<User> {
+    return this.http.get<User>(this.user_url);
   }
 }

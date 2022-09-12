@@ -1,16 +1,19 @@
 <div class="container">
-    <h1 class="font-weight-light text-center mt-4 mb-0">
-        Connor Hawes | CV
-    </h1>
-    <hr class="mt-2 mb-5">
 
-    <h2 class="font-weight-light text-center mt-4 mb-0">
-        Profile
-    </h2>
-    <hr class="mt-2 mb-5">
-    <p class="font-weight-light text-center mt-4 mb-0">
-        I am a focussed and goal driven individual with a capacity for  attuning ones self and supporting others.
-    </p>
+    <div class="card" *ngIf="user != null">
+        <div class="profile">
+            <img [src]="user.avatar_url" alt="Avatar" class="avatar">
+            <div class="user-info">
+                <h5><b>{{user.name}}</b></h5>
+                <p>{{user.bio}}</p>
+                <p>
+                    <fa-icon [icon]="faWork"></fa-icon> {{user.company}}
+                    <fa-icon [icon]="faLocation"></fa-icon> {{user.location}} 
+                    <fa-icon [icon]="faGithubRepo"></fa-icon> {{user.public_repos}}
+                </p>
+            </div>
+        </div>
+    </div>
 
     <h2 class="font-weight-light text-center mt-4 mb-0">
         Work Experience
