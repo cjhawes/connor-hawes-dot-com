@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { NotFoundComponent } from './layouts/not-found/not-found/not-found.component';
 import { PostResolveService } from './services/dashboard/blog/post-resolve.service';
 import { PostService } from './services/dashboard/blog/post.service';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { PostService } from './services/dashboard/blog/post.service';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
+    FontAwesomeModule,
   ],
   providers: [
     PostService,

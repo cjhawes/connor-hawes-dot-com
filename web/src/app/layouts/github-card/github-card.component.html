@@ -1,0 +1,15 @@
+<a [href]="html_url" class="github-card">
+  <h3>{{name}}</h3>
+  <p>{{description}}</p>
+  <span class="github-card__meta" *ngIf="language != null">
+    <span class="github-card__language-icon" style="color: #7A0410;">●</span> {{language}}
+  </span>
+  <span class="github-card__meta">
+    <fa-icon [icon]="faStar"></fa-icon>
+    <span>{{stargazers_count}}</span>
+  </span>
+  <span class="github-card__meta">
+    <fa-icon [icon]="faCodeFork"></fa-icon>
+    <span>{{forks_count}}</span>
+  </span>
+</a>

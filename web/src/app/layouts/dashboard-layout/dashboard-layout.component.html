@@ -20,18 +20,38 @@
                         Socials
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="https://github.com/cjhawes">Github</a></li>
-                        <li><a class="dropdown-item" href="https://www.linkedin.com/in/connor-hawes-675b07180">LinkedIn</a></li>
-                        <li><a class="dropdown-item" href="https://www.facebook.com/softwareextraordinaire/">Facebook</a></li>
-                        <li><a class="dropdown-item" href="https://www.instagram.com/dawhalewarior/">Instagram</a></li>
-                        <li><a class="dropdown-item" href="https://twitter.com/dawhalewarior97">Twitter</a></li>
+                        <li>
+                          <a class="dropdown-item" href="https://github.com/cjhawes">
+                            <fa-icon [icon]="faGithub"></fa-icon> Github
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="https://www.linkedin.com/in/connor-hawes-675b07180">
+                            <fa-icon [icon]="faLinkedin"></fa-icon> LinkedIn
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="https://www.facebook.com/softwareextraordinaire/">
+                            <fa-icon [icon]="faFacebook"></fa-icon> Facebook
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="https://www.instagram.com/dawhalewarior/">
+                            <fa-icon [icon]="faInstagram"></fa-icon> Instagram
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="https://twitter.com/dawhalewarior97">
+                            <fa-icon [icon]="faTwitter"></fa-icon> Twitter
+                          </a>
+                        </li>
                     </ul>
                 </li>
             </ul>
             <ul class="navbar-nav mb-2">
               <li class="nav-item nav-btn">
                 <a class="btn btn-primary" [href]="pdfSrc" role="button" download>
-                  CV Download
+                  <fa-icon [icon]="faDownload"></fa-icon> CV
                 </a>
               </li>
               <li class="nav-item nav-btn">
