@@ -1,15 +1,10 @@
 <div class="container">
-    <h1 class="font-weight-light text-center mt-4 mb-0">Blog</h1>
-    <hr class="mt-2 mb-5">
-</div>
-
-<div class="container">
-    <h2 class="font-weight-light text-center mt-4 mb-0">About</h2>
+    <h3 class="font-weight-light text-center mt-4 mb-0">About</h3>
     <p class="font-weight-light text-center mt-4 mb-0">This blog is written as technical learning documents for review by the author. If anyone is to find this useful it would be a pleasure.</p>
 </div>
 
 <div class="container">
-    <h2 class="font-weight-light text-center mt-4 mb-0">Posts</h2><br>
+    <h3 class="font-weight-light text-center mt-4 mb-0">Posts</h3><br>
     <div class="band" *ngFor="let post of posts">
         <div class="item-1">
             <a [routerLink]="['post', post.id]" class="card">

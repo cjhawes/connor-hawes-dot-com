@@ -13,12 +13,16 @@ $spacing: 20px;
   text-decoration: none;
   font-size: 13px;
   flex: 1;
-  min-width: 250px;
+  height: 90%;
 
   > h3 {
     margin-top: 0;
     color: $color-github;
     font-size: 15px;
+  }
+
+  &:hover {
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
   }
 }
 
