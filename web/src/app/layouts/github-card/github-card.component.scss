@@ -26,8 +26,14 @@ $spacing: 20px;
   }
 }
 
-.github-card__meta {
+.github-card_language {
+  display: flex;
+  margin-bottom: $spacing/2;
+}
+
+.github-card_meta {
   margin-right: $spacing;
+  display: inline;
 
   > i {
     font-size: 16px;
